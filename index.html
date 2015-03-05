@@ -15,23 +15,33 @@
     </main>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>
-      // var apiData = ["London", "Paris"];
-      var  temperature = 20;
+
+      $(document).ready(function() {
+
+
+
+      var  temp = 20;
       var weatherIcon = 'sunny';
-      $.getJSON('http://weather-api.herokuapp.com/cities', function(json) {
-        $.each(json, function(index, city) {
+        $.getJSON('http://weather-api.herokuapp.com/cities', function(data) {
+        $.each(data.cities, function(index, city) {
         $('.cities').append(
           $('<option></option>').val(city).html(city + " ⌄")
         );
       });
 
+
+
+
+
+
+      $('.temperature').text(temp);
+      $('img').attr('src', 'images/' + weatherIcon + '.svg')
+
+      });
+
       });
 
 
-
-
-      $('.temperature').text(temperature);
-      $('img').attr('src', 'images/' + weatherIcon + '.svg')
     </script>
   </body>
 </html>
