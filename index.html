@@ -13,7 +13,7 @@
       </div>
       <select class="cities">
 
-      <option>Select city ↓</option>
+      <option>Select city ⌄</option>
       </select>
       <span class="temperature"></span>
     </main>
@@ -39,6 +39,7 @@
         }).done(function(data) {
           $('.temperature').text(data.temp);
           $('img').attr('src', 'images/' + data.outlook + '.svg');
+          $(".icon").removeClass().addClass("icon " + data.outlook);
         });
       });
 

@@ -30,7 +30,7 @@ img {
 
 .temperature {
   display: block;
-  margin-left: 2em;
+  margin-left: 1.5em;
   font-size: 6em;
   font-weight: bold;
   text-align: center;
@@ -63,9 +63,9 @@ select {
    border: none;
    background: none;
    font-size: 1.75em;
-   margin: 0;
+   display: block;
    text-align: center;
-   margin-left: 2.5em;
+   margin-left: 7.5em;
    color: #9b9b9b;
 }
 
