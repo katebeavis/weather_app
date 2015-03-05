@@ -69,6 +69,10 @@ select {
    color: #9b9b9b;
 }
 
+.cities{
+  text-transform: capitalize;
+};
+
 .shadow {
   -webkit-box-shadow: 0px 0px 6px 3px #dfdfdf;
      -moz-box-shadow: 0px 0px 6px 3px #dfdfdf;
