@@ -1,30 +1,28 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="css/weather-style.css">
-  </head>
-  <body>
-    <main class="shadow">
-      <div class="icon snow">
-        <img src="images/snow.svg">
-      </div>
-      <select class="cities">
-      <option>Select city ⌄</option>
-      </select>
-      <span class="temperature"></span>
-    </main>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script>
-      $.ajax({
+<head>
+  <meta charset="utf-8">
+
+  <title>Weather App</title>
+  <link href="css/weather-style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="shadow">
+    <div class="icon snow"><img src="images/snow.svg"></div><select class=
+    "cities">
+      <option>
+        Select city ⌄
+      </option>
+    </select> <span class="temperature"></span>
+  </main><script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> <script>
+    $.ajax({
         dataType: 'jsonp',
         url: 'http://weather-api.herokuapp.com/cities',
         }).done(function(data) {
         $.each(data.cities, function(index, city) {
           $('.cities').append(
-          $('<option></option>').val(city).html(city + " ⌄"));
+          $('<option><\/option>').val(city).html(city + " ⌄"));
         });
       });
       $(".cities").change(function() {
@@ -39,6 +37,6 @@
           $(".icon").removeClass().addClass("icon " + data.outlook);
         });
       });
-    </script>
-  </body>
+  </script>
+</body>
 </html>

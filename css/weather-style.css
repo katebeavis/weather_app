@@ -1,80 +1,79 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import "http://fonts.googleapis.com/css?family=Montserrat:400,700";
 
 body {
-  box-sizing: border-box;
+  box-sizing:border-box;
   background-color:#eef2f3;
-  font-family: 'Montserrat', sans-serif;
-  color: #9b9b9b;
-  padding-top: 3em;
+  font-family:'Montserrat',sans-serif;
+  color:#9b9b9b;
+  padding-top:3em
 }
 
 main {
-  background-color:#ffffff;
-  width: 25em;
-  height: 10em;
-  margin: 0 auto 0 auto;
-  padding: .8em;
+  background-color:#fff;
+  width:25em;
+  height:10em;
+  margin:0 auto;
+  padding:.8em
 }
 
 .icon {
-  height: 100%;
-  width: 10em;
-  float: left;
-  background-size: cover;
+  height:100%;
+  width:10em;
+  float:left;
+  background-size:cover
 }
 
 img {
-  width: 100%;
-  opacity: .45;
+  width:100%;
+  opacity:.45
 }
 
 .temperature {
-  display: block;
-  margin-left: 1.5em;
-  font-size: 6em;
-  font-weight: bold;
-  text-align: center;
+  display:block;
+  margin-left:1.5em;
+  font-size:6em;
+  font-weight:700;
+  text-align:center
 }
 
 .temperature:after {
-  content: "º";
+  content:"º"
 }
 
 .sunny {
-  background-color: #f88d25;
+  background-color:#f88d25
 }
 
 .snow {
-  background-color: #b6d8ec;
+  background-color:#b6d8ec
 }
 
 .cloudy {
-  background-color: #a09b97;
+  background-color:#a09b97
 }
 
 .rain {
-  background-color: #309aec;
+  background-color:#309aec
 }
 
 select {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   border: none;
-   background: none;
-   font-size: 1.75em;
-   display: block;
-   text-align: center;
-   margin-left: 7.5em;
-   color: #9b9b9b;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border:none;
+  background:none;
+  font-size:1.75em;
+  display:block;
+  text-align:center;
+  margin-left:7.5em;
+  color:#9b9b9b
 }
 
-.cities{
-  text-transform: capitalize;
-};
-
+.cities {
+  text-transform:capitalize
+}
 .shadow {
-  -webkit-box-shadow: 0px 0px 6px 3px #dfdfdf;
-     -moz-box-shadow: 0px 0px 6px 3px #dfdfdf;
-          box-shadow: 0px 0px 6px 3px #dfdfdf;
+  -webkit-box-shadow:0 0 6px 3px #dfdfdf;
+  -moz-box-shadow:0 0 6px 3px #dfdfdf;
+  box-shadow:0 0 6px 3px #dfdfdf
 }
